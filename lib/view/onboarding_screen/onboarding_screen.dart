@@ -72,7 +72,7 @@ class OnboardingScreen extends StatelessWidget {
               height: 16,
             ),
             Text(
-              'Our chat app is the perfect way to stay\n connected with friends and family.',
+              'Our chat app is the perfect way to stay connected with friends and family.',
               style:
                   TextStyle(color: AllColors.subtitleTExtColor, fontSize: 16),
             ),
