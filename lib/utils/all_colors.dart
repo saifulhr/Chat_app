@@ -4,6 +4,8 @@ class AllColors {
   AllColors._();
   //Prinmary color
   static const primaryColor = Color(0xffFFFFFF);
+  static const secondaryColor = Color(0xff1A1A1A);
+  static const primaryBlackColor = Color.fromARGB(255, 0, 0, 0);
   // Splash Screen Text Color
   static const splashScreenTextColor = Color(0xff001815);
   //Onboarding Screen Background Colors & Text Color

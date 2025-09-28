@@ -5,8 +5,9 @@ class AllText {
   static const String splashScreenText = 'Chatbox';
   //Onboarding Screen Text
 
-  static const String onboardingTitle1 = 'Connect friends easily & quickly';
-  static const String onboardingTitle2 =
+  static const String onboardingTitle1 = 'Connect friends\n';
+  static const String onboardingTitle2 = 'easily & quickly';
+  static const String onboardingTitle3 =
       'Our chat app is the perfect way to stay connected with friends and family.';
   static const String orText = 'OR';
   static const String onbordingSignupText = 'Sign up with email';
