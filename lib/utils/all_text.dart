@@ -19,7 +19,7 @@ class AllText {
       'Get chatting with friends and family today by signing up for our chat app!';
   static const String yourNameText = 'Your name';
   static const String youremailText = 'Your email';
-  static const String passwordText = 'Your password';
+  static const String passwordText = 'Password';
   static const String confirmPasswordText = 'Confirm password';
   static const String createanaccount = 'Create an account';
 

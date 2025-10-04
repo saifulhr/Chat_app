@@ -8,4 +8,7 @@ class AllImages {
   static const String onboardingGoogleIcon = 'assets/icons/Google.png';
   static const String onboardingAppleIcon = 'assets/icons/apple.png';
 
+  //Signup Screen Icon & Image 
+  static const String arrowIcon = 'assets/icons/arrow.png';
+
 }

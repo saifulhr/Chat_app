@@ -1,7 +1,9 @@
 import 'package:chat_app/utils/all_colors.dart';
 import 'package:chat_app/utils/all_sizes.dart';
 import 'package:chat_app/utils/all_text.dart';
+import 'package:chat_app/view/authentication/log_in_screen/log_in_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DefaultLogIn extends StatelessWidget {
   const DefaultLogIn({
@@ -11,7 +13,9 @@ class DefaultLogIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Get.to(()=>LogInScreen());
+      },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

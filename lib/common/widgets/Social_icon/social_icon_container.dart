@@ -12,6 +12,7 @@ class SocialIconContainer extends StatelessWidget {
   final Color borderColor;
   final Color backgroundColor;
   final VoidCallback ontap;
+  final Color ? iconcolor;
 
   const SocialIconContainer({
     super.key,
@@ -23,7 +24,7 @@ class SocialIconContainer extends StatelessWidget {
     this.backgroundColor = AllColors.secondaryColor,
     this.iconwidth = AllSizes.iconMd,
     this.iconheight = AllSizes.iconMd,
-    required this.ontap,
+    required this.ontap,this.iconcolor,
   });
 
   @override
@@ -46,6 +47,7 @@ class SocialIconContainer extends StatelessWidget {
             icon,
             width: iconwidth,
             height: iconheight,
+            color: iconcolor,
           ),
         ),
       ),

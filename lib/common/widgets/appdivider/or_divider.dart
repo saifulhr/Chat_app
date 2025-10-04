@@ -19,11 +19,13 @@ class OrDivider extends StatelessWidget {
         Expanded(
           child: Container(
             height: 0.5,
+            width: 0.5,
             color: fieldColor,
           ),
         ),
+        SizedBox(width: 6,),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0,),
           child: Text(
             AllText.orText,
             style: TextStyle(
@@ -33,6 +35,7 @@ class OrDivider extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(width: 6,),
         Expanded(
           child: Container(
             height: 0.5,

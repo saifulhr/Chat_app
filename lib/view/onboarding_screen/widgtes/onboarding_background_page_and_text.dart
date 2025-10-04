@@ -57,6 +57,8 @@ class OnboardingBackgroundPageAndText extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 22,
                   color: Colors.white,
+                  fontFamily: 'Caros',
+                  fontWeight: FontWeight.w500,
                 ),
                 children: [
                   TextSpan(
@@ -86,7 +88,9 @@ class OnboardingBackgroundPageAndText extends StatelessWidget {
               AllText.onboardingTitle3,
               style: TextStyle(
                 color: AllColors.subtitleTExtColor,
-                fontSize: AllSizes.fontSizeMd,
+                fontSize: AllSizes.fontSizeSm,
+                fontFamily: 'Caros',
+                  fontWeight: FontWeight.w500,
               ),
             ),
 
