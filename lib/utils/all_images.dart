@@ -10,5 +10,7 @@ class AllImages {
 
   //Signup Screen Icon & Image 
   static const String arrowIcon = 'assets/icons/arrow.png';
+  //Email verification image
+  static const String emailVerificatin = 'assets/images/jpg/email verification.jpg';
 
 }

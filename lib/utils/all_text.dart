@@ -33,4 +33,10 @@ class AllText {
   //Error Text
 
   static const String errortext1 = 'Invalid email address';
+
+  //Verification Screen text
+  static const String checkEmail = 'Check Your Email';
+  static const String checkDetails= 'To confirm your email address,\nthe button in the email we\n sent to you,';
+  static const String openEmailApp= 'Open Email App';
+  static const String alreadyHaveAnAccount = 'Already have an account?';
 }
