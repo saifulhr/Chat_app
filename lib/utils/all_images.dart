@@ -14,5 +14,10 @@ class AllImages {
   static const String emailVerificatin = 'assets/images/jpg/email verification.jpg';
   //Forgot Screen Image
   static const String forgotPassword= 'assets/images/png/fprgotPass.png';
+  //Bottom Nav Bar Image Icon
+  static const String messageIcon = 'assets/icons/message.png';
+  static const String callIcon = 'assets/icons/Call.png';
+  static const String contactIcon = 'assets/icons/user (1).png';
+  static const String settingIcon = 'assets/icons/settings (1).png';
 
 }

@@ -44,4 +44,9 @@ class AllText {
   static const String lbText = 'Email';
   static const String hinText = 'Enter your registered email';
   static const String resetPass= 'Reset Password';
+  //Bottom Nav Bar Text 
+  static const String messageText = 'Message';
+  static const String callText = 'Calls';
+  static const String contactText = 'Contacts';
+  static const String settingText = 'Settings';
 }
