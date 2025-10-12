@@ -39,4 +39,9 @@ class AllText {
   static const String checkDetails= 'To confirm your email address,\nthe button in the email we\n sent to you,';
   static const String openEmailApp= 'Open Email App';
   static const String alreadyHaveAnAccount = 'Already have an account?';
+  //Forgot password screen text
+  static const String forgotPasswordtext = 'Don’t worry! It happens. Please enter your email to reset your password.';
+  static const String lbText = 'Email';
+  static const String hinText = 'Enter your registered email';
+  static const String resetPass= 'Reset Password';
 }
