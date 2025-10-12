@@ -1,6 +1,6 @@
 import 'package:chat_app/bottom_nav_bar.dart';
-import 'package:chat_app/common/widgets/Default_Button/custom_elevated_button.dart';
-import 'package:chat_app/common/widgets/appdivider/or_divider.dart';
+import 'package:chat_app/common/widgets/custom_elevated_button.dart';
+import 'package:chat_app/common/widgets/or_divider.dart';
 import 'package:chat_app/common/widgets/custom_head_text/custom_arrow_icon.dart';
 import 'package:chat_app/common/widgets/custom_head_text/custom_main_text.dart';
 import 'package:chat_app/utils/all_colors.dart';
@@ -11,7 +11,6 @@ import 'package:chat_app/view/authentication/log_in_screen/widgets/log_in_social
 import 'package:chat_app/view/authentication/log_in_screen/widgets/log_in_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({super.key});
@@ -50,7 +49,7 @@ class LogInScreen extends StatelessWidget {
             CustomElevatedButton(
               text: 'Log in',
               ontap: () {
-                Get.to(()=>BottomNavBar());
+                Get.to(() => BottomNavBar());
               },
               backgroundColor: AllColors.btnEnableColor,
               textColor: AllColors.primaryColor,

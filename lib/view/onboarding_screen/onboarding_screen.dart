@@ -1,5 +1,5 @@
-import 'package:chat_app/common/widgets/Default_Button/custom_elevated_button.dart';
-import 'package:chat_app/common/widgets/appdivider/or_divider.dart';
+import 'package:chat_app/common/widgets/custom_elevated_button.dart';
+import 'package:chat_app/common/widgets/or_divider.dart';
 import 'package:chat_app/utils/all_colors.dart';
 import 'package:chat_app/utils/all_sizes.dart';
 import 'package:chat_app/utils/all_text.dart';

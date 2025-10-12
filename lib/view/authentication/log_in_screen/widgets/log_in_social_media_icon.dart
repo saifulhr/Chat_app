@@ -1,4 +1,4 @@
-import 'package:chat_app/common/widgets/Social_icon/social_icon_container.dart';
+import 'package:chat_app/common/widgets/social_icon_container.dart';
 import 'package:chat_app/utils/all_colors.dart';
 import 'package:chat_app/utils/all_images.dart';
 import 'package:chat_app/utils/all_sizes.dart';

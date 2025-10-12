@@ -49,4 +49,6 @@ class AllText {
   static const String callText = 'Calls';
   static const String contactText = 'Contacts';
   static const String settingText = 'Settings';
+  //Message Screen all text
+  static const String homeText = 'Home';
 }

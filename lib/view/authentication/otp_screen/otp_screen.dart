@@ -1,4 +1,4 @@
-import 'package:chat_app/common/widgets/Default_Button/custom_elevated_button.dart';
+import 'package:chat_app/common/widgets/custom_elevated_button.dart';
 import 'package:chat_app/common/widgets/custom_head_text/custom_arrow_icon.dart';
 import 'package:chat_app/helpers/device_helpers.dart';
 import 'package:chat_app/utils/all_colors.dart';

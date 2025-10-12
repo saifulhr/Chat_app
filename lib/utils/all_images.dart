@@ -19,5 +19,8 @@ class AllImages {
   static const String callIcon = 'assets/icons/Call.png';
   static const String contactIcon = 'assets/icons/user (1).png';
   static const String settingIcon = 'assets/icons/settings (1).png';
+  //Message screen all Icon and Image
+  static const String searchIocn = 'assets/icons/Search.png';
+  static const String profileImage = 'assets/images/png/Ellipse 307.png';
 
 }

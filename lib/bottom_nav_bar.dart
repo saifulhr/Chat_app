@@ -1,6 +1,7 @@
 import 'package:chat_app/utils/all_colors.dart';
 import 'package:chat_app/utils/all_images.dart';
 import 'package:chat_app/utils/all_text.dart';
+import 'package:chat_app/view/message/message_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -103,7 +104,7 @@ class NavigationController extends GetxController {
   RxInt selectedIndex = 0.obs;
 
   List<Widget> screens = [
-    Container(),
+    MessageScreen(),
     Container(color: Colors.green),
     Container(color: Colors.black),
     Container(color: Colors.yellow),
