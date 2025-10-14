@@ -32,6 +32,9 @@ class AllColors {
   static const attachmentIconColor = Color(0xff0F0C22);
   static const fileIconColor = Color(0xff797C7B);
   static const searchIconBorderColor = Color(0xff363F3B);
+  static const contColor = Color(0xffF8FBFA);
+  static const textfieldcontColor = Color(0xffF3F6F6);
+  static const filecontColor = Color(0xff797C7B);
   //Bottom Navigation Bar Color
   static const bottomNavBarEnabledColor = Color(0xff24786D);
   static const bottomNavBarDisabledColor = Color(0xff797C7B);

@@ -51,4 +51,5 @@ class AllText {
   static const String settingText = 'Settings';
   //Message Screen all text
   static const String homeText = 'Home';
+  static const String todayText = 'Today';
 }

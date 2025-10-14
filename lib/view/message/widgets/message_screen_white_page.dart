@@ -1,8 +1,11 @@
 import 'package:chat_app/helpers/device_helpers.dart';
+import 'package:chat_app/utils/all_colors.dart';
 import 'package:chat_app/utils/all_images.dart';
 import 'package:chat_app/view/message/widgets/name_and_message.dart';
 import 'package:chat_app/view/message/widgets/time_and_message_count.dart';
+import 'package:chat_app/view/message_details/message_details_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MessageScreenWhitePage extends StatelessWidget {
   const MessageScreenWhitePage({
@@ -27,7 +30,10 @@ class MessageScreenWhitePage extends StatelessWidget {
             itemCount: 1,
             itemBuilder: (context, index) {
               return GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Get.to(() => MessageDetailsScreen());
+                },
+                behavior: HitTestBehavior.translucent,
                 child: Container(
                   margin: const EdgeInsets.only(bottom: 16),
                   child: Row(
@@ -37,14 +43,30 @@ class MessageScreenWhitePage extends StatelessWidget {
                       Row(
                         children: [
                           // Profile Image
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(31),
-                            child: Image.asset(
-                              AllImages.profileImage,
-                              width: 52,
-                              height: 52,
-                              fit: BoxFit.cover,
-                            ),
+                          Stack(
+                            children: [
+                              CircleAvatar(
+                                backgroundImage:
+                                    AssetImage(AllImages.profileImage),
+                                radius: 28,
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                right: 0,
+                                child: Container(
+                                  width: 13,
+                                  height: 13,
+                                  decoration: BoxDecoration(
+                                    color: Colors.green,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: AllColors.primaryColor,
+                                      width: 1.5,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                           const SizedBox(width: 12),
 

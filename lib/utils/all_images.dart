@@ -22,5 +22,13 @@ class AllImages {
   //Message screen all Icon and Image
   static const String searchIocn = 'assets/icons/Search.png';
   static const String profileImage = 'assets/images/png/Ellipse 307.png';
+  //Message Details Screen Page 
+  static const String cellPone= 'assets/icons/Cellphone.png';
+  static const String videoCall= 'assets/icons/Video.png';
+  static const String clipImage= 'assets/icons/Clip, Attachment.png';
+  static const String fileImage= 'assets/icons/file.png';
+  static const String cameraImage= 'assets/icons/camera.png';
+  static const String voiceImage= 'assets/icons/voice.png';
+  static const String sendImage= 'assets/icons/send.png';
 
 }
