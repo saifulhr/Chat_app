@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
   final bool obscureText;
-
   final String? labelText;
+  final TextEditingController? controller;
 
   const CustomTextField({
     super.key,
     this.labelText,
-    this.obscureText = false,
+    this.obscureText = false, 
+    this.controller,
   });
 
   @override
@@ -30,6 +31,7 @@ class CustomTextField extends StatelessWidget {
         SizedBox(
           height: 44,
           child: TextField(
+            controller: controller,
             obscureText: obscureText,
             style: TextStyle(
               color: AllColors.primaryBlackColor,
