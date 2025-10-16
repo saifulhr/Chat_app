@@ -1,5 +1,7 @@
 class AllImages {
   AllImages._();
+  //Splash Screen Image 
+  static const String splashScreen = 'assets/images/png/splash.png';
   //Onboarding Page Image & Icon Image
 
   static const String onboardingBackgroundImage ='assets/images/jpg/onboard_screen.jpg';

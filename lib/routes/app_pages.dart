@@ -6,6 +6,7 @@ import 'package:chat_app/view/authentication/signup_screen/signup_screen.dart';
 import 'package:chat_app/view/message/message_screen.dart';
 import 'package:chat_app/view/message_details/message_details_screen.dart';
 import 'package:chat_app/view/onboarding_screen/onboarding_screen.dart';
+import 'package:chat_app/view/root_screen.dart';
 import 'package:get/get.dart';
 
 class AppPages {
@@ -30,13 +31,8 @@ class AppPages {
       name: AppRoutes.forgot,
       page: () => ForgotPassScreen(),
     ),
-    GetPage(
-      name: AppRoutes.message, 
-      page: () => MessageScreen()
-      ),
-    GetPage(
-      name: AppRoutes.messagedetails, 
-      page: () => MessageDetailsScreen()
-      ),
+    GetPage(name: AppRoutes.message, page: () => MessageScreen()),
+    GetPage(name: AppRoutes.messagedetails, page: () => MessageDetailsScreen()),
+    GetPage(name: AppRoutes.rootScreen, page: () => RootScreen()),
   ];
 }

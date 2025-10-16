@@ -114,5 +114,19 @@ class AuthServices {
     return 'Unexpected error: $e';
   }
 }
+User? getCurrentUser() {
+  return FirebaseAuth.instance.currentUser;
+}
+Future<bool> isUserRegisteredInFirestore() async {
+  final user = FirebaseAuth.instance.currentUser;
+  if (user == null) return false;
+
+  final doc = await FirebaseFirestore.instance
+      .collection('SignupUsers')
+      .doc(user.uid)
+      .get();
+
+  return doc.exists;
+}
 
 }
