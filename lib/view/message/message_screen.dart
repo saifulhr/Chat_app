@@ -18,9 +18,10 @@ class MessageScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 29),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                AppbarAllItem(),
-                SizedBox(height: 40),
+              children: [
+                const AppbarAllItem(),
+                const SizedBox(height: 40),
+                //User Profile List
                 UserProfileList(),
               ],
             ),

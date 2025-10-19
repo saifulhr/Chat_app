@@ -28,7 +28,7 @@ class _RootScreenState extends State<RootScreen> {
       final isRegistered = await _authServices.isUserRegisteredInFirestore();
 
       if (isRegistered) {
-        Get.offAllNamed(AppRoutes.message);
+        Get.offAllNamed(AppRoutes.bottomnavbar);
       } else {
         await _authServices.signOut();
         Get.offAllNamed(AppRoutes.onboarding);

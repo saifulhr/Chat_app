@@ -23,7 +23,7 @@ class AllImages {
   static const String settingIcon = 'assets/icons/settings (1).png';
   //Message screen all Icon and Image
   static const String searchIocn = 'assets/icons/Search.png';
-  static const String profileImage = 'assets/images/png/Ellipse 307.png';
+  static const String profileImage = 'https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg';
   //Message Details Screen Page 
   static const String cellPone= 'assets/icons/Cellphone.png';
   static const String videoCall= 'assets/icons/Video.png';

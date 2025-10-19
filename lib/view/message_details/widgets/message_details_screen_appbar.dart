@@ -7,14 +7,21 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class MessagedetailsScreenAppbar extends StatelessWidget {
+  final String userName;
+  final String photoUrl;
+  final bool isActive;
+
   const MessagedetailsScreenAppbar({
     super.key,
+    required this.userName,
+    required this.photoUrl,
+    this.isActive = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return CustomAppBar(
-      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
       backgroundColor: AllColors.primaryColor,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,32 +35,32 @@ class MessagedetailsScreenAppbar extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
-          //Message Details Screen Profile Image & Active Now Container
-          MEssageDetailsScreenProfile(),
+          MEssageDetailsScreenProfile(photoUrl: photoUrl, isActive: isActive),
           const SizedBox(width: 12),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
-                "User",
-                style: TextStyle(
+                userName,
+                style: const TextStyle(
                   fontSize: AllSizes.fontSizeMd,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Caros',
                   color: AllColors.textPrimaryColor,
                 ),
               ),
-              Text(
-                "Active now",
-                style: TextStyle(
-                  fontSize: 12,
-                  fontFamily: 'Caros',
-                  color: AllColors.textSecondaryColor,
+              if (isActive)
+                const Text(
+                  "Active now",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontFamily: 'Caros',
+                    color: AllColors.textSecondaryColor,
+                  ),
                 ),
-              ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Row(
             children: [
               IconButton(

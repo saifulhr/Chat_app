@@ -1,10 +1,19 @@
+import 'dart:math';
+
 import 'package:chat_app/model/signup_user_model.dart';
+import 'package:chat_app/utils/all_border_colors.dart';
+import 'package:chat_app/utils/all_images.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthServices {
   final FirebaseAuth _auth = FirebaseAuth.instance..setLanguageCode('en');
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  int getRandomColorIndex() {
+    final rand = Random();
+    return rand.nextInt(AllBorderColors.profileBorders.length);
+  }
 // Sign Up Function
   Future<String?> signup({
     required String name,
@@ -28,6 +37,9 @@ class AuthServices {
         uid: user!.uid,
         name: name,
         email: email,
+        status: "active",
+        photoUrl: AllImages.profileImage,
+        borderColorIndex: getRandomColorIndex(),
       );
 
       await _firestore

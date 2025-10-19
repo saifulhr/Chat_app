@@ -47,7 +47,7 @@ class AppbarAllItem extends StatelessWidget {
               shape: BoxShape.circle,
               color: AllColors.subtitleTExtColor,
               image: DecorationImage(
-                image: AssetImage(AllImages.profileImage),
+                image: NetworkImage(AllImages.profileImage),
                 fit: BoxFit.cover,
               ),
             ),

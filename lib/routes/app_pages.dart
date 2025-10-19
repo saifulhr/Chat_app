@@ -3,6 +3,7 @@ import 'package:chat_app/view/authentication/forgot_screen/forgot_pass_screen.da
 import 'package:chat_app/view/authentication/log_in_screen/log_in_screen.dart';
 import 'package:chat_app/view/authentication/otp_screen/email_verification_screen.dart';
 import 'package:chat_app/view/authentication/signup_screen/signup_screen.dart';
+import 'package:chat_app/view/bottom_nav_bar.dart';
 import 'package:chat_app/view/message/message_screen.dart';
 import 'package:chat_app/view/message_details/message_details_screen.dart';
 import 'package:chat_app/view/onboarding_screen/onboarding_screen.dart';
@@ -32,7 +33,22 @@ class AppPages {
       page: () => ForgotPassScreen(),
     ),
     GetPage(name: AppRoutes.message, page: () => MessageScreen()),
-    GetPage(name: AppRoutes.messagedetails, page: () => MessageDetailsScreen()),
+    GetPage(
+      name: AppRoutes.messagedetails,
+      page: () {
+        final args = Get.arguments as Map<String, dynamic>;
+        return MessageDetailsScreen(
+          receiverUserId: args['receiverUserId'],
+          receiverUserName: args['receiverUserName'],
+          receiverUserPhotoUrl: args['receiverUserPhotoUrl'],
+          receiverUserStatus: args['receiverUserStatus'],
+        );
+      },
+    ),
     GetPage(name: AppRoutes.rootScreen, page: () => RootScreen()),
+     GetPage(
+      name: AppRoutes.bottomnavbar,
+      page: () => BottomNavBar(),
+    ),
   ];
 }
